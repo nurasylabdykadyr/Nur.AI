@@ -39,7 +39,7 @@ export function Main() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://nur-ai-m1zm.onrender.com/api/chat", {
+      const response = await fetch('https://nur-ai-m1zm.onrender.com/api/ask', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
