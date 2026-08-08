@@ -13,7 +13,7 @@ export function Register() {
     setError('');
     setSuccess('');
     try {
-      const response = await fetch('http://localhost:3000/api/register', {
+      const response = await fetch('https://nur-ai-m1zm.onrender.com/api/chat', {
         method: 'POST',
         headers: {'Content-Type': 'application/json',},
         body: JSON.stringify({ username, password }),
